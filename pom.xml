@@ -97,13 +97,14 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>Landmark Technologies Releases Nexus Repository</name>
-	      <url>http://3.83.125.68:8000/repository/td-release23-12/</url>
+	      <url>http://35.224.145.159:8081/repository/BMO-release/</url>
 	    </repository>
+		
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Landmark Technologies Snapshot Nexus Repository </name>
-	      <url>http://3.83.125.68:8000/repository/td-snapshot-23/</url>
+	      <url>http://35.224.145.159:8081/repository/BMO-Snapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
