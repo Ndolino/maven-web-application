@@ -11,11 +11,8 @@
 <body>
 <h1 align="center">Landmark Technologies Decisoft</h1>
 <h2 align="center"> Welcome to Landmark Technology. 
-	Landmark Technology is a an ideal online training  platform for DevOps and Cloud Engineers. 
-	We offer interview preparations and job assitance.
-	The shout of the King is in our midst. His name is JESUS. 
-	HE IS OUR SUCCESS ACCESS KEY
-	The Holi spirit our helper will do it</h2>
+	We wish you a merry Christmas
+	a King is Born</h2>
 <hr>
 <div style="text-align: center;">
 	<span>
