@@ -13,6 +13,7 @@
 <h2 align="center"> Welcome to Landmark Technology. 
 	We wish you a merry Christmas
 	a King is Born</h2>
+<h1 align="center">Thank you Jesus</h1>
 <hr>
 <div style="text-align: center;">
 	<span>
