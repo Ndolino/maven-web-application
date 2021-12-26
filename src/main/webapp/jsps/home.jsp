@@ -9,7 +9,7 @@
 </head>
 </head>
 <body>
-<h1 align="center">Landmark Technologies Decisoft</h1>
+<h1 align="center">Landmark Technologies Decisoft QA code</h1>
 <h2 align="center"> Welcome to Landmark Technology. 
 	We wish you a merry Christmas
 	a King is Born</h2>
