@@ -1,0 +1,38 @@
+node {
+   def MVHD= tool name :'maven3.8.4'
+    
+    
+    stage('1.Sourcecode'){
+        git credentialsId: 'GithubCredentials', url: 'https://github.com/Ndolino/maven-web-application'
+        
+    }
+    stage('build'){ 
+   sh " ${MVHD}/bin/mvn clean package"
+        
+    }
+    stage('1.CodeQuality'){
+       sh "${MVHD}/bin/mvn sonar:sonar"
+      
+        
+    }
+    stage('UploadAtifacts'){
+        sh "${MVHD}/bin/mvn deploy"
+       
+        
+    }
+    stage('deploytocontainer'){
+        deploy adapters: [tomcat9(credentialsId: '5edec9bb-82cc-4003-adf7-dd96cad0b0c9', path: '', url: 'http://34.238.241.5:8080/')], contextPath: null, war: 'target/*.war'
+        
+    }
+    
+  stage('Approval') { 
+      timeout(time: 5, unit: 'DAYS') {
+    input message : "Pls approve to prod deployement"
+  }
+  stage('deploytocontainer'){
+        deploy adapters: [tomcat9(credentialsId: '5edec9bb-82cc-4003-adf7-dd96cad0b0c9', path: '', url: 'http://34.238.241.5:8080/')], contextPath: null, war: 'target/*.war'
+        
+    }
+}
+    
+}
