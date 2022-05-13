@@ -1,7 +1,7 @@
 ---
-become: true
-hosts: web
-tasks: 
+- become: true
+  hosts: web
+  tasks: 
   - 
     name: "Install packages"
     yum: 
