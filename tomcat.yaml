@@ -1,6 +1,6 @@
 
 hosts: web
-become: True
+become: true
 tasks:
     - name: Install packages
       yum:
@@ -10,7 +10,7 @@ tasks:
       service:
         name: httpd
         state: started
-        enabled: True
+        enabled: true
     - name: Deploy static website
       copy:
         src: /var/lib/jenkins/workspace/gmbgmbtest/target/*
