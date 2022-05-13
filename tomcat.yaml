@@ -1,5 +1,5 @@
 
-sts: web
+hosts: web
     become: True
         tasks:
               - name: Install packages
