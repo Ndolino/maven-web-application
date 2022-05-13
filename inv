@@ -1,2 +1,6 @@
 [web]
+<<<<<<< HEAD
 172.31.4.51 ansible_user=ec2-user
+=======
+172.31.4.51 ansible_user=ec2-user 
+>>>>>>> 682ee81c9a86984ff5dc587752829b558d19615f
