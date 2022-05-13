@@ -1,6 +1,6 @@
-
+---
+become: true
 hosts: web
-become:  true
 tasks: 
   - 
     name: "Install packages"
